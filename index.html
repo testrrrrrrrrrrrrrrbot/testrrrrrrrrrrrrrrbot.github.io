@@ -27,9 +27,6 @@
 			border-radius: 50px
 		}
 		</style>
-		<script>
-			document.getElementById("info").innerHTML = document.referrer;
-		</script>
 	</head>
 	<body>
 		<div id="info"></div>
@@ -44,6 +41,7 @@
 		  		window.location.href = params.url;
 			});
 			$(".info").text = document.referrer;
+			document.getElementById("info").innerHTML = document.referrer;
 		</script>
 	</body>
 </html>
