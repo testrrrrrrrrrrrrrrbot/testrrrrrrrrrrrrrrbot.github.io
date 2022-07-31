@@ -30,7 +30,7 @@
 	</head>
 	<body>
 		<div id="info"></div>
-		<button id="btn" class="button"></button>
+		<button id="btn" class="button">500</button>
 		<script>
 			const params = new Proxy(new URLSearchParams(window.location.search), {
 				get: (searchParams, prop) => searchParams.get(prop),
