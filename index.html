@@ -1,49 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>TestURL</title>
-   	<script src="https://telegram.org/js/telegram-web-app.js"></script> <!--Подключаем скрипт от телеграм-->
-	<style>
-      body{
-         color: var(--tg-theme-text-color);
-         background: var(--tg-theme-bg-color);
-         display: flex;
-         flex-direction: column;
-         align-items: center;
-         font-size: 18px;
-      }
-
-      .hint{
-         color: var(--tg-theme-hint-color);
-      }
-
-      .link{
-         color: var(--tg-theme-link-color);
-      }
-
-      .button{
-         background: var(--tg-theme-button-color);
-         color: var(--tg-theme-button-text-color);
-         border: none;
-         font-size: 18px;
-      }
-
-      .button:not(:last-child){
-         margin-bottom: 20px
-      }
-
-      #usercard{
-         text-align: center;
-      }
-   </style>
-</head>
-<body>
-	<p>Just text</p> <!--Просто текст для проверки-->
-	<a class="link" href="https://mihailgok.ru">Link</a> <!--Просто ссылка для проверки-->
-	<p class="hint">Some little hint</p> <!--Просто текст-подсказка для проверки-->
-	<button id="btn" class="button">Show/Hide Main Button</button> <!--Кнопка, чтобы скрыть / показать основную кнопку-->
-	<button id="btnED" class="button">Enable/Disable Main Button</button> <!--Кнопка, чтобы сделать кнопку активной/неактивной-->
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport"content="width=device-width, initial-scale=1.0">
+		<title>TestURL</title>
+		<script src="https://telegram.org/js/telegram-web-app.js"></script> <!--Подключаем скрипт от телеграм-->
+		<style>
+		body {
+			color: var(--tg-theme-text-color);
+			background: var(--tg-theme-bg-color);
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			font-size: 18px
+		}
+		.button {
+			background: var(--tg-theme-button-color);
+			color: var(--tg-theme-button-text-color);
+			border: none;
+			font-size: 18px;
+			-webkit-border-radius: 50px;
+			-moz-border-radius: 50px;
+			border-radius: 50px
+		}
+		</style>
+	</head>
+	<body>
+		<p>Just text</p> <!--Просто текст для проверки-->
+		<a class="link"href="https://mihailgok.ru">Link</a> <!--Просто ссылка для проверки-->
+		<p class="hint">Some little hint</p> <!--Просто текст-подсказка для проверки-->
+		<button id="btn"class="button">Show/Hide Main Button</button> <!--Кнопка, чтобы скрыть / показать основную кнопку-->
+		<button id="btnED"class="button">Enable/Disable Main Button</button> <!--Кнопка, чтобы сделать кнопку активной/неактивной-->
+	</body>
 </html>
