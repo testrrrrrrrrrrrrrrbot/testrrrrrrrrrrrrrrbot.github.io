@@ -30,12 +30,13 @@
 
 	</head>
 	<body>
-		<div class="info"></div>
+		<div id="info"></div>
 		<button id="btn" class="button"></button>
 		<script>
 			const params = new Proxy(new URLSearchParams(window.location.search), {
 				get: (searchParams, prop) => searchParams.get(prop),
 			});
+			document.getElementById("info").innerHTML = document.referrer;
 			$("#btn").text = params.amount;
 			$("#btn").click(function() {
 		  		window.location.href = params.url;
